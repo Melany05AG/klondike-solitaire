@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Melany Arias Guadamuz">
+  <title>Solitario</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="contenedor-juego">
+        <div class="encabezado">
+            <h1>🃏 Solitario 🃏</h1>
+        </div>
+        <div class="marcador">
+            <div>Movimientos: <span id="movimientos">0</span></div>
+            <div>Tiempo: <span id="cronometro">00:00</span></div>
+        </div>
+
+        <div class="controles">
+            <button class="boton" onclick="nuevoJuego()">Nuevo Juego</button>
+        </div>
+
+        <div class="fila-superior">
+            <div class="pila pila-mazo" data-pila="mazo"></div>
+            <div class="pila pila-descarte" data-pila="descarte"></div>
+            <div style="grid-column: span 1;"></div>
+            <div class="fundaciones">
+                <div class="fundacion" data-fundacion="0" data-palo="corazones">♥️</div>
+                <div class="fundacion" data-fundacion="1" data-palo="diamantes">♦️</div>
+                <div class="fundacion" data-fundacion="2" data-palo="treboles">♣️</div>
+                <div class="fundacion" data-fundacion="3" data-palo="picas">♠️</div>
+            </div>
+        </div>
+
+        <div class="tablero">
+            <div class="columna-tablero" data-columna="0"></div>
+            <div class="columna-tablero" data-columna="1"></div>
+            <div class="columna-tablero" data-columna="2"></div>
+            <div class="columna-tablero" data-columna="3"></div>
+            <div class="columna-tablero" data-columna="4"></div>
+            <div class="columna-tablero" data-columna="5"></div>
+            <div class="columna-tablero" data-columna="6"></div>
+        </div>
+
+        
+    </div>
+
+    <div class="mensaje-victoria" id="mensajeVictoria">
+        <h2>🎉 ¡Felicitaciones! 🎉</h2>
+        <p>¡Has ganado el solitario!</p>
+        <p>Movimientos: <span id="movimientosFinal"></span></p>
+        <p>Tiempo: <span id="tiempoFinal"></span></p>
+        <button class="boton" onclick="nuevoJuego()">Jugar de Nuevo</button>
+    </div>
+    
+  <script src="js/juego.js"></script>
+</body>
+</html>
