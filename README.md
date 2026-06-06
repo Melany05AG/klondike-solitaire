@@ -1,12 +1,12 @@
-# 🃏 Solitario Klondike
+# Solitario Klondike
 
 Implementación completa del clásico juego de cartas **Solitario Klondike** en el navegador, desarrollada con programación orientada a objetos en JavaScript Vanilla puro.
 
-## 🎮 Demo
+## Demo
 
 Abrí `index.html` directamente en tu navegador — no requiere servidor ni instalación.
 
-## ✨ Características
+## Características
 
 - **Drag & Drop** — Arrastrá cartas entre columnas y fundaciones
 - **Click para mover** — Hacé clic en una carta para seleccionarla y luego clic en el destino
@@ -18,7 +18,7 @@ Abrí `index.html` directamente en tu navegador — no requiere servidor ni inst
 - **Reciclaje del mazo** — Cuando el stock se agota, se puede reciclar el descarte
 - **Pantalla de victoria** — Muestra movimientos y tiempo total al ganar
 
-## 🕹️ Cómo jugar
+## Cómo jugar
 
 1. Hacé clic en el **mazo** (esquina superior izquierda) para robar una carta
 2. **Arrastrá** o **hacé clic** en las cartas para moverlas
@@ -27,14 +27,14 @@ Abrí `index.html` directamente en tu navegador — no requiere servidor ni inst
 5. Columnas vacías solo aceptan **Reyes**
 6. ¡Completá las 4 fundaciones para ganar!
 
-## 🛠️ Tecnologías
+## Tecnologías
 
 - JavaScript ES6+ (Clases, Arrow Functions, Spread Operator)
 - HTML5 (Drag & Drop API)
 - CSS3
 - Sin dependencias externas
 
-## 🚀 Uso
+## Uso
 
 ```bash
 git clone https://github.com/tu-usuario/klondike-solitaire.git
@@ -44,7 +44,7 @@ cd klondike-solitaire
 # No requiere servidor ni npm install
 ```
 
-## 📁 Estructura del proyecto
+## Estructura del proyecto
 
 ```
 solitario/
@@ -60,7 +60,7 @@ solitario/
     └── ...             # 52 cartas en PNG (nombradas como ValorPalo)
 ```
 
-## 🏗️ Arquitectura
+## Arquitectura
 
 El juego está implementado como una única clase `JuegoSolitario` con responsabilidades claras:
 
@@ -75,10 +75,10 @@ El juego está implementado como una única clase `JuegoSolitario` con responsab
 | `actualizarVisualizacion()` | Sincroniza el DOM con el estado del juego |
 | `destruir()` | Limpia timers y event listeners (evita memory leaks) |
 
-## 👥 Autora
+## Autora
 
 - Melany Arias Guadamuz
 
-## 📄 Licencia
+## Licencia
 
 Este proyecto fue desarrollado con fines académicos.
